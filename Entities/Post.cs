@@ -32,6 +32,19 @@ namespace StringBuilderProj.Entities
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
+            sb.AppendLine("----------");
+            sb.AppendLine(Title);
+            sb.Append(Likes);
+            sb.Append(" Likes - ");
+            sb.AppendLine(Moment.ToString("MM/dd/yyyy HH:mm:ss"));
+            sb.AppendLine(Content);
+            sb.AppendLine("Comments:");
+            foreach(Comment comment in Comments)
+            {
+                sb.AppendLine(comment.Text);
+            }
+            sb.AppendLine("----------");
+            return sb.ToString();
         }
     }
 }

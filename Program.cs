@@ -30,6 +30,8 @@ namespace StringBuilderProj
             p2.AddComment(c4);
 
             Console.WriteLine(p1);
+            Console.WriteLine();
+            Console.WriteLine(p2);
         }
     }
 }
