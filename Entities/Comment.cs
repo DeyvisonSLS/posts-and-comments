@@ -1,4 +1,4 @@
-﻿namespace StringBuilder.Entities
+﻿namespace StringBuilderProj.Entities
 {
     class Comment
     {

@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
-namespace StringBuilder.Entities
+namespace StringBuilderProj.Entities
 {
     class Post
     {
@@ -27,6 +28,10 @@ namespace StringBuilder.Entities
         public void RemoveComment(Comment comment)
         {
             Comments.Remove(comment);
+        }
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
         }
     }
 }
